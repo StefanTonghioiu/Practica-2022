@@ -1,0 +1,35 @@
+1.Ce este un controller?
+
+	Din cate am inteles un controller este folosit pentru management de switchuri, adica cand un switch primeste un pachet se uite in flow table si daca nu stie practic intrarea in flow table pentru calea aia, intreaba controllerul,
+daia trebuie sa legam fiecare controllerele la fiecare switch din topologia respectiva.
+
+
+	Spre exemplu :  avem 4 hosturi si un switch si un controller ceva de genul:
+
+
+                    c0
+                    |
+
+                   s1  
+            /      /\    \
+           /      /  \    \
+          /      /    \    \
+         /      /      \    \
+	/      /	\    \
+      h1      h2     h3      h4
+
+
+		 Daca vrem de ex sa accesam un server web care ar fi h4 , deoarece se fol protocolul tcp se incepe cu stabilirea conexiunii intre client si server cu 3 way handshake ,se transmite un mesaj syn     care este forwardat in s1, dupa s1 nu stie ce sa faca cu el il forwardeaza in c0 cu un packet in
+dupa controllerul poate da doua mesaje , packet out sau flow mod. Pachet out ii spune switch-ului sa forwardeze in h4 si flow MOD ii spune switch-ului daca mai are mesaje de genul sa nu il mai intrebe si sa il forwardeze direct in h4.
+
+
+
+		Asa si invers din h4 pleaca un mesaj syn/ack in s1, dupa din s1 un pachet in c0 din c0 pleaca doua mesaje ori, pachet out sau flow mod, dupa intra in h1.
+
+
+
+2. Am reusit sa fac un remote controler la proiectul initial project.py , doar ca am facut un singur remote controller si nu 3, am folosit remote controllerul pox. Am atasat scriptul pe git exercitiu1.py.
+
+
+3. Am reusit sa fac un simplu router in mininet in care conectez doua retele la el pentru a comunica. Am atasat scriptul pe git router.py
+
