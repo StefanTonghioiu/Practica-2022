@@ -1,0 +1,7 @@
+Astazi mi-am creat doua topology prin script python: 1. proiectulmeu.py unde am configurat bandwidth in care i-am pus 10 mb unui link, am configurat un link sa aiba 50 % pierderi si am mai configurat un link sa aiba intarzieri de 15 ms. Am faacut ping pentru intreaga retea.
+
+				 		     2. proiectulmeurouter.py unde mi-am configurat un router care leaga doua retele, am afisat ca hosturile comunica intre ele si am afisat viteza de transfer de date a doua hosturi.
+
+
+
+ + m-am mai uitat pe niste exemple de script. 
