@@ -1,7 +1,7 @@
 1.Ce este un controller?
 
-	Din cate am inteles un controller este folosit pentru management de switchuri, adica cand un switch primeste un pachet se uite in flow table si daca nu stie practic intrarea in flow table pentru calea aia, intreaba controllerul,
-daia trebuie sa legam fiecare controllerele la fiecare switch din topologia respectiva.
+	Din cate am inteles un controller este folosit pentru management de switchuri, adica cand un switch primeste un pachet se uite in flow table si daca nu stie practic intrarea in flow table pentru calea aceea, intreaba controllerul,
+din aceasta cauza trebuie sa legam fiecare controller la fiecare switch din topologia respectiva.
 
 
 	Spre exemplu :  avem 4 hosturi si un switch si un controller ceva de genul:
